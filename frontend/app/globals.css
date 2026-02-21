@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #09090b;
+  --card: #18181b;
+  --border: #27272a;
+  --muted: #71717a;
+  --accent: #22d3ee;
+  --accent-dim: #0891b2;
+}
+
+body {
+  background: var(--bg);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
