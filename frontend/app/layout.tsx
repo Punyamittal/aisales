@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { AppShell } from "@/components/layout/AppShell";
 
 export const metadata: Metadata = {
-  title: "AI Sales — Autonomous Outreach",
-  description: "Convert GitHub projects into job opportunities and revenue",
+  title: "AI Career Assistant",
+  description: "Modern AI-powered career assistant dashboard",
 };
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-zinc-950 text-zinc-100 antialiased">
-        {children}
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

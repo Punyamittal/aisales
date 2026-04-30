@@ -1,0 +1,238 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5974 >>
+stream
+BT
+/F1 10 Tf
+45 800 Td
+(article) Tj
+0 -12 Td
+(inputenc) Tj
+0 -12 Td
+(fontenc) Tj
+0 -12 Td
+(amsmath) Tj
+0 -12 Td
+(geometry) Tj
+0 -12 Td
+(titlesec) Tj
+0 -12 Td
+(enumitem) Tj
+0 -12 Td
+(hyperref) Tj
+0 -12 Td
+(% Set margins for a compact, one-page layout) Tj
+0 -12 Td
+(left=0.7in,) Tj
+0 -12 Td
+(right=0.7in,) Tj
+0 -12 Td
+(top=0.7in,) Tj
+0 -12 Td
+(bottom=0.7in) Tj
+0 -12 Td
+(% Customizing section titles for a clean, professional look) Tj
+0 -12 Td
+(0pt12pt4pt) Tj
+0 -12 Td
+(2pt 0pt 2pt) Tj
+0 -12 Td
+(0pt10pt2pt) Tj
+0 -12 Td
+(% Remove default section numbering) Tj
+0 -12 Td
+(secnumry-1) Tj
+0 -12 Td
+(% Custom command for job entries) Tj
+0 -12 Td
+([4]) Tj
+0 -12 Td
+(4pt) Tj
+0 -12 Td
+(#1 #2) Tj
+0 -12 Td
+(#3 #4) Tj
+0 -12 Td
+(-2pt) Tj
+0 -12 Td
+(% Start Document) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% HEADER) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Punya Mittal) Tj
+0 -12 Td
+(2pt) Tj
+0 -12 Td
+(\(123\) 456-7890 \\ mailto:punya.mittal@email.compunya.mittal@email.com \\) Tj
+0 -12 Td
+(https://linkedin.com/in/punyamittalLinkedIn Profile) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% SUMMARY) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Summary) Tj
+0 -12 Td
+(Highly motivated and results-driven Software Engineer with 2+ years of experience specializing) Tj
+0 -12 Td
+(in building robust, scalable backend services using Python and FastAPI. Proficient in designing) Tj
+0 -12 Td
+(efficient SQL database schemas and implementing full-lifecycle RESTful APIs. Proven ability to) Tj
+0 -12 Td
+(translate complex business requirements into clean, maintainable, and high-performance code,) Tj
+0 -12 Td
+(aiming to contribute immediately to challenging engineering roles.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% SKILLS) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Skills) Tj
+0 -12 Td
+(Languages: Python \(Advanced\), SQL, JavaScript, HTML/CSS) Tj
+0 -12 Td
+(Frameworks/Libraries: FastAPI, Django, Flask, Pydantic, SQLAlchemy, Pandas) Tj
+0 -12 Td
+(Databases: PostgreSQL, MySQL, SQLite) Tj
+0 -12 Td
+(Tools/DevOps: Git, Docker, REST APIs, Unit Testing \(Pytest\), Agile Methodologies) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% EXPERIENCE) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Experience) Tj
+0 -12 Td
+(Software Developer InternTech Solutions CorpSummer 2023 - PresentRemote) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Developed and optimized core backend microservices using FastAPI and Python, handling over) Tj
+0 -12 Td
+(10,000 requests daily with 99.9\\% uptime.) Tj
+0 -12 Td
+(- Designed and implemented complex data models and optimized query performance by refactoring) Tj
+0 -12 Td
+(SQL queries in PostgreSQL, reducing average API latency by 25\\%.) Tj
+0 -12 Td
+(- Built comprehensive API endpoints for user authentication and data retrieval, ensuring) Tj
+0 -12 Td
+(adherence to OAuth 2.0 standards and robust error handling.) Tj
+0 -12 Td
+(- Collaborated with cross-functional teams in an Agile environment, participating in code) Tj
+0 -12 Td
+(reviews and contributing to CI/CD pipelines using Git and Docker.) Tj
+0 -12 Td
+(Junior DeveloperAcademic Tech IncJan 2022 - May 2023On-site) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Contributed to the development of a customer portal backend using Python/Flask, managing user) Tj
+0 -12 Td
+(data and transaction records.) Tj
+0 -12 Td
+(- Wrote stored procedures and optimized database interactions using raw SQL, improving data) Tj
+0 -12 Td
+(integrity and query speed for reporting modules.) Tj
+0 -12 Td
+(- Implemented unit and integration tests using Pytest, increasing overall code coverage by 15\\%) Tj
+0 -12 Td
+(and improving system reliability.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% PROJECTS) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Projects) Tj
+0 -12 Td
+(Inventory Management API \(Python, FastAPI, PostgreSQL\)) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Designed and deployed a complete RESTful API for tracking inventory, allowing CRUD operations) Tj
+0 -12 Td
+(for multiple product categories.) Tj
+0 -12 Td
+(- Utilized FastAPI with Pydantic for request validation and type hinting, ensuring data) Tj
+0 -12 Td
+(integrity at the API layer.) Tj
+0 -12 Td
+(- Managed the entire data persistence layer using PostgreSQL, implementing complex relational) Tj
+0 -12 Td
+(schemas and transactional logic via SQLAlchemy ORM.) Tj
+0 -12 Td
+(- Deployed the application using Docker containers, ensuring environment consistency across) Tj
+0 -12 Td
+(development and staging.) Tj
+0 -12 Td
+(Personal Portfolio Site Backend \(Python, SQL\)) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Built a lightweight backend to power a personal portfolio, featuring user submission forms) Tj
+0 -12 Td
+(and data storage.) Tj
+0 -12 Td
+(- Handled form submissions and data validation using Python, storing structured data in a) Tj
+0 -12 Td
+(SQLite database.) Tj
+0 -12 Td
+(- Focused on clean code architecture and modular design, demonstrating proficiency in backend) Tj
+0 -12 Td
+(logic flow.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% EDUCATION) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Education) Tj
+0 -12 Td
+(Bachelor of Technology in Computer Science Engineering) Tj
+0 -12 Td
+(University Name Graduation: May 2022) Tj
+0 -12 Td
+(Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Object-) Tj
+0 -12 Td
+(Oriented Programming.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000006267 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+6337
+%%EOF

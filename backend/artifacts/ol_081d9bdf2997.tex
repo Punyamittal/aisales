@@ -1,0 +1,119 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% Set geometry for a single-page, tight layout
+\geometry{
+    left=0.7in,
+    right=0.7in,
+    top=0.7in,
+    bottom=0.7in
+}
+
+% Customizing section titles for ATS readability
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\section}{\vspace{2pt}\scshape\raggedright\large}{}{0pt}{\thesection}{}[\titlerule]
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Remove default section numbering
+\setcounter{secnumry}{-1}
+
+% Define a command for job entries
+\newcommand{\jobentry}[4]{
+    \vspace{4pt}
+    \textbf{#1} \hfill \textbf{#2} \\
+    \textit{#3} \hfill \textit{#4}
+    \vspace{2pt}
+}
+
+% Remove indentation for itemize lists
+\setlist[itemize]{itemsep=0pt, topsep=2pt, parsep=0pt, partspacing=0pt}
+
+\begin{document}
+
+% =================================================================
+% HEADER / NAME
+% =================================================================
+\begin{center}
+    \Huge \textbf{Punya Mittal} \\
+    \vspace{2pt}
+    \em Software Engineer | Backend Development Specialist
+    \vspace{4pt}
+    \small 
+    (123) 456-7890 | \href{mailto:punya.mittal@email.com}{punya.mittal@email.com} | 
+    \href{https://linkedin.com/in/punyamittal}{LinkedIn Profile} | 
+    \href{https://github.com/punyamittal}{GitHub Portfolio}
+\end{center}
+
+% =================================================================
+% SUMMARY
+% =================================================================
+\section*{Summary}
+Highly motivated and results-driven Software Engineer with 3+ years of experience specializing in building robust, scalable backend services using Python and FastAPI. Proven ability to design and implement efficient RESTful APIs, optimize database queries (SQL), and deliver full-cycle solutions. Seeking to leverage expertise in modern web frameworks to contribute immediately to challenging engineering roles.
+
+% =================================================================
+% SKILLS
+% =================================================================
+\section*{Skills}
+\textbf{Languages:} Python (Advanced), SQL, JavaScript, Bash
+\textbf{Frameworks/Libraries:} FastAPI, Django, Flask, Pydantic, SQLAlchemy, Requests
+\textbf{Databases:} PostgreSQL, MySQL, SQLite
+\textbf{Tools/DevOps:} Git, Docker, REST APIs, Unit Testing (pytest), AWS/Cloud Services
+
+% =================================================================
+% EXPERIENCE
+% =================================================================
+\section*{Experience}
+
+\jobentry{Software Developer}{Tech Innovations Corp}{2022 – Present}{Remote}
+\begin{itemize}
+    \item Designed and developed high-performance microservices using \textbf{FastAPI} and Python, handling over 10,000 requests daily with 99.9% uptime.
+    \item Optimized complex database interactions by refactoring inefficient SQL queries in PostgreSQL, resulting in a 30% reduction in average API response time.
+    \item Implemented robust authentication and authorization layers (JWT) for critical endpoints, enhancing system security and compliance.
+    \item Developed automated unit and integration tests using \textbf{pytest}, improving code coverage across core services from 65% to 90%.
+    \item Collaborated with cross-functional teams to define API specifications and deploy scalable solutions via Docker containers.
+\end{itemize}
+
+\jobentry{Junior Developer Intern}{Startup Solutions Inc}{Summer 2021}{City, State}
+\begin{itemize}
+    \item Assisted in migrating legacy API endpoints from Flask to a modern Python framework, improving maintainability and speed.
+    \item Wrote stored procedures and optimized database schemas in MySQL, supporting the core user management module.
+    \item Developed internal tooling scripts using Python to automate data validation and reporting processes, saving the team approximately 5 hours per week.
+\end{itemize}
+
+% =================================================================
+% PROJECTS
+% =================================================================
+\section*{Projects}
+\textbf{Real-Time Inventory Tracker API} | \href{https://github.com/punyamittal/inventory-api}{GitHub Link}
+\begin{itemize}
+    \item Built a comprehensive RESTful API using \textbf{FastAPI} for tracking inventory levels across multiple simulated warehouses.
+    \item Utilized SQLAlchemy ORM to manage complex relationships between products, locations, and transactions, ensuring data integrity.
+    \item Implemented asynchronous background tasks (e.g., stock alerts) using Python's `asyncio` capabilities.
+    \item Features include CRUD operations, role-based access control, and detailed logging.
+\end{itemize}
+
+\textbf{Personal Portfolio Backend} | \href{https://github.com/punyamittal/portfolio-backend}{GitHub Link}
+\begin{itemize}
+    \item Developed a secure backend service to manage user data and content for a personal portfolio site.
+    \item Designed the PostgreSQL schema to handle user profiles and content versions, optimizing read/write performance.
+    \item Implemented API rate limiting and input validation using Pydantic models, ensuring system resilience against abuse.
+\end{itemize}
+
+% =================================================================
+% EDUCATION
+% =================================================================
+\section*{Education}
+\textbf{Bachelor of Technology (B.Tech) in Computer Science Engineering}
+\hfill \textbf{Indian Institute of Technology (IIT) Delhi} \hfill 2017 – 2021
+\begin{itemize}
+    \item Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Operating Systems.
+    \item Academic Achievement: Graduated with a GPA of 3.8/4.0.
+\end{itemize}
+
+\end{document}

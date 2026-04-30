@@ -1,0 +1,92 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1382 >>
+stream
+BT
+/F1 10 Tf
+45 800 Td
+(Candidate) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Summary) Tj
+0 -12 Td
+(AI-focused engineering candidate targeting Ai Intern Openings at Find Work. Demonstrated hands-) Tj
+0 -12 Td
+(on delivery in model pipelines, LLM security, and production Python APIs.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Skills) Tj
+0 -12 Td
+(- Python) Tj
+0 -12 Td
+(- Pytorch) Tj
+0 -12 Td
+(- Rag) Tj
+0 -12 Td
+(- Sql) Tj
+0 -12 Td
+(- Tensorflow) Tj
+0 -12 Td
+(- Xgboost) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Projects) Tj
+0 -12 Td
+(- Built AutoML pipeline for model selection and deployment; reduced model-to-production cycle) Tj
+0 -12 Td
+(by 70% across 5+ datasets.) Tj
+0 -12 Td
+(- Implemented LLM jailbreak defense layer with 92%+ detection accuracy over 10+ prompt attack) Tj
+0 -12 Td
+(classes.) Tj
+0 -12 Td
+(- Developed RAG-based cognitive assistant with persistent memory and vector retrieval for long-) Tj
+0 -12 Td
+(context sessions.) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Experience Highlights) Tj
+0 -12 Td
+(- Designed Python/FastAPI model-serving APIs with SQL-backed feature persistence and low-) Tj
+0 -12 Td
+(latency inference.) Tj
+0 -12 Td
+(- Optimized ML training/evaluation pipelines \(Pandas, Scikit-learn, XGBoost, LightGBM\) to cut) Tj
+0 -12 Td
+(iteration time by 50%.) Tj
+0 -12 Td
+(- Improved deployment reliability using Dockerized services and CI/CD checks for reproducible) Tj
+0 -12 Td
+(model releases.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001675 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1745
+%%EOF

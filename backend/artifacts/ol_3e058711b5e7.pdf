@@ -1,0 +1,216 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5407 >>
+stream
+BT
+/F1 10 Tf
+45 800 Td
+(article) Tj
+0 -12 Td
+(inputenc) Tj
+0 -12 Td
+(fontenc) Tj
+0 -12 Td
+(geometry) Tj
+0 -12 Td
+(amsmath) Tj
+0 -12 Td
+(amsfonts) Tj
+0 -12 Td
+(amssymb) Tj
+0 -12 Td
+(xcolor) Tj
+0 -12 Td
+(hyperref) Tj
+0 -12 Td
+(enumitem) Tj
+0 -12 Td
+(titlesec) Tj
+0 -12 Td
+(array) Tj
+0 -12 Td
+(% Set page geometry for a compact, single-page layout) Tj
+0 -12 Td
+(left=0.7in,) Tj
+0 -12 Td
+(right=0.7in,) Tj
+0 -12 Td
+(top=0.7in,) Tj
+0 -12 Td
+(bottom=0.7in) Tj
+0 -12 Td
+(% Customizing section titles) Tj
+0 -12 Td
+(0pt12pt4pt) Tj
+0 -12 Td
+(-4pt 0em[ ]) Tj
+0 -12 Td
+(0pt8pt2pt) Tj
+0 -12 Td
+(% Define custom commands for contact info and skills) Tj
+0 -12 Td
+([1]) Tj
+0 -12 Td
+(2pt) Tj
+0 -12 Td
+(#1) Tj
+0 -12 Td
+(2pt) Tj
+0 -12 Td
+(mailto:punya.m215@gmail.compunya.m215@gmail.com | +91 8929266960 |) Tj
+0 -12 Td
+(https://github.com/PunyaMittalGitHub | https://linkedin.com/in/punyamittalLinkedIn) Tj
+0 -12 Td
+(4pt) Tj
+0 -12 Td
+(% Remove default section spacing) Tj
+0 -12 Td
+(0pt) Tj
+0 -12 Td
+(0pt) Tj
+0 -12 Td
+(Punya Mittal) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Summary) Tj
+0 -12 Td
+(Highly motivated AI/ML Engineer and Full-Stack Developer with hands-on experience building end-) Tj
+0 -12 Td
+(to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in) Tj
+0 -12 Td
+(Python and applied expertise in advanced frameworks including PyTorch, TensorFlow, and XGBoost.) Tj
+0 -12 Td
+(Proven ability to translate complex natural language goals into deployed, functional AI) Tj
+0 -12 Td
+(solutions. Seeking an ML/Software Engineering Internship.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Technical Skills) Tj
+0 -12 Td
+([leftmargin=*, itemsep=2pt, parsep=0pt]) Tj
+0 -12 Td
+(- AI/ML Frameworks: PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, RAG, Feature) Tj
+0 -12 Td
+(Engineering, Hyperparameter Tuning.) Tj
+0 -12 Td
+(- Languages \\& Backend: Python \(Expert\), JavaScript \(ES6+\), Java, FastAPI, Node.js, REST APIs,) Tj
+0 -12 Td
+(SQL, Pandas, NumPy.) Tj
+0 -12 Td
+(- Web \\& Infrastructure: React, Microservices, Docker, Kubernetes, AWS, CI/CD, WebRTC, Event-) Tj
+0 -12 Td
+(Driven Architecture.) Tj
+0 -12 Td
+(- Databases \\& Tools: MongoDB, MySQL, Vector Databases \(Pinecone/Chroma\), Git, Jupyter.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Experience) Tj
+0 -12 Td
+(AI & Backend Engineering Intern | Analytx4t Lab Pvt Ltd | Oct 2025 ? Dec 2025) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Designed and deployed 10+ production REST APIs using Node.js, optimizing response latency via) Tj
+0 -12 Td
+(connection pooling and advanced query optimization.) Tj
+0 -12 Td
+(- Integrated distributed microservices architecture, enabling low-latency, real-time enterprise) Tj
+0 -12 Td
+(data processing across concurrent multitenant workloads.) Tj
+0 -12 Td
+(- Developed robust backend systems utilizing SQL and Python for data ingestion and) Tj
+0 -12 Td
+(transformation pipelines.) Tj
+0 -12 Td
+(AI / ML Engineering Intern | ANNAM.AI \(IIT Ropar\) | May 2025 ? Jul 2025) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Built end-to-end ML pipelines \(preprocessing, feature engineering, training, evaluation\) in) Tj
+0 -12 Td
+(Python and Pandas, cutting model iteration time by 50\\%.) Tj
+0 -12 Td
+(- Trained and optimized XGBoost and LightGBM gradient boosting models for agricultural) Tj
+0 -12 Td
+(intelligence, achieving 87%+ prediction accuracy on crop yield forecasting datasets.) Tj
+0 -12 Td
+(- Implemented model versioning and deployment strategies, ensuring reproducibility and) Tj
+0 -12 Td
+(scalability of ML assets.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Selected Projects \\& Research) Tj
+0 -12 Td
+(KAI ? Cognitive AI Companion \(RAG System\) Research Paper In Progress) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Architected an advanced AI assistant featuring persistent memory and emotional state) Tj
+0 -12 Td
+(simulation using Retrieval-Augmented Generation \(RAG\) and vector databases.) Tj
+0 -12 Td
+(- Designed a novel context retention architecture, allowing the model to maintain long-term) Tj
+0 -12 Td
+(context across multiple user sessions.) Tj
+0 -12 Td
+(AutoML Pipeline ? Natural Language to Deployed Model Research Paper In Progress) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Engineered an AutoML system that converts natural language goals into fully deployed models) Tj
+0 -12 Td
+(via automated dataset discovery and model selection.) Tj
+0 -12 Td
+(- Benchmarked Random Forest, XGBoost, and LightGBM across 5+ datasets, utilizing Bayesian) Tj
+0 -12 Td
+(hyperparameter tuning to cut model-to-production time by 70\\%.) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(Advanced Security & Networking Simulation) Tj
+0 -12 Td
+(- Developed a comprehensive simulation environment to model complex network traffic and) Tj
+0 -12 Td
+(security vulnerabilities, demonstrating deep understanding of networking protocols and threat) Tj
+0 -12 Td
+(modeling.) Tj
+0 -12 Td
+(Technical Skills) Tj
+0 -12 Td
+(Languages: Python \(Advanced\), SQL, JavaScript, Bash) Tj
+0 -12 Td
+(Frameworks/Libraries: PyTorch, TensorFlow, Scikit-learn, FastAPI, Pandas, NumPy) Tj
+0 -12 Td
+(Tools/Concepts: Docker, Git, REST APIs, Cloud Computing \(AWS/) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000005700 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+5770
+%%EOF

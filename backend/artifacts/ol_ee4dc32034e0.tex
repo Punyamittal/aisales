@@ -1,0 +1,101 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% Set geometry for a clean, single-page layout
+\geometry{
+    left=0.7in,
+    right=0.7in,
+    top=0.7in,
+    bottom=0.7in
+}
+
+% Customizing section titles
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\section}{\vspace{-4pt}\scshape\large\bfseries\color{blue!70!black}}
+{}
+{\vspace{-4pt}}
+{}{}
+
+% Customizing itemize lists
+\setlist[itemize]{label=\textbullet, leftmargin=1.5em, topsep=0pt, itemsep=2pt}
+
+% Remove page numbering
+\pagestyle{empty}
+
+% Define contact information block
+\newcommand{\headerinfo}{
+    \begin{center}
+        \textbf{\Huge Punya Mittal} \\
+        \vspace{2pt}
+        \small AI/ML Engineer \textperiodcentered\ Full-Stack Developer \textperiodcentered\ Open Source Founder
+        \vspace{4pt}
+        \small \faPhone\ +91 8929266960 \textperiodcentered\ \faEnvelope\ punya.m215@gmail.com \textperiodcentered\ \faGithub\ \href{https://github.com/yourusername}{GitHub (148 repos)} \textperiodcentered\ \faLinkedin\ \href{https://linkedin.com/in/yourprofile}{LinkedIn}
+    \end{center}
+    \vspace{6pt}
+}
+
+\begin{document}
+
+\headerinfo
+
+\section*{Summary}
+Highly motivated B.Tech CS (AI) student with hands-on experience building end-to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in Python and applied expertise in advanced frameworks including \textbf{PyTorch}, \textbf{TensorFlow}, \textbf{XGBoost}, and \textbf{FastAPI}. Proven ability to translate complex natural language goals into deployed AI solutions (RAG, LLMs). Open-source ecosystem founder and competitive problem solver (90+ LeetCode problems solved). Seeking ML/Software Engineering internships.
+
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages:} Python (Expert), Java, JavaScript (ES6+), SQL, Bash
+    \item \textbf{ML Frameworks:} PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, Pandas, NumPy
+    \item \textbf{AI/ML Concepts:} Retrieval-Augmented Generation (RAG), NLP, Prompt Engineering, Feature Engineering, Hyperparameter Tuning, AutoML, LLMs
+    \item \textbf{Backend/Web:} FastAPI, REST APIs, Node.js, Microservices, WebRTC, API Architecture
+    \item \textbf{Databases/Tools:} Vector Databases (Pinecone/Chroma), MongoDB, MySQL, Docker, AWS, Git, CI/CD
+    \item \textbf{CS Fundamentals:} Data Structures, Algorithms, OOP, Distributed Systems, System Design, Event-Driven Architecture
+\end{itemize}
+
+\section*{Experience}
+\textbf{AI & Backend Engineering Intern} | Analytx4t Lab Pvt Ltd | Oct 2025 – Dec 2025
+\begin{itemize}
+    \item Designed and deployed 10+ production REST APIs using Node.js, optimizing response latency via connection pooling and advanced query optimization for a financial analytics platform.
+    \item Integrated distributed microservices architecture, enabling low-latency, real-time enterprise data processing across concurrent multitenant workloads.
+\end{itemize}
+
+\textbf{AI / ML Engineering Intern} | ANNAM.AI (IIT Ropar) | May 2025 – Jul 2025
+\begin{itemize}
+    \item Built end-to-end ML pipelines (preprocessing, feature engineering, training, evaluation) in Python, Pandas, and Scikit-learn, resulting in a 50\% reduction in model iteration time.
+    \item Trained and optimized \textbf{XGBoost} and LightGBM gradient boosting models for agricultural intelligence systems, achieving 87%+ prediction accuracy on crop yield forecasting datasets.
+\end{itemize}
+
+\section*{Selected Projects & Research}
+\textbf{KAI — Cognitive AI Companion} \hfill \textit{Research Paper In Progress}
+\begin{itemize}
+    \item Developed an AI assistant featuring persistent memory and emotional state simulation by implementing a novel \textbf{RAG} architecture utilizing \textbf{vector databases} for long-term context retention across sessions.
+\end{itemize}
+
+\textbf{AutoML Pipeline} \hfill \textit{Natural Language to Deployed Model}
+\begin{itemize}
+    \item Engineered an AutoML system that converts natural language goals into deployed models, cutting model-to-production time by 70\%. Benchmarked RF, \textbf{XGBoost}, and LightGBM across 5+ datasets using Bayesian hyperparameter tuning.
+\end{itemize}
+
+\textbf{AI Jailbreak Defense System} \hfill \textit{Patent & Research In Progress}
+\begin{itemize}
+    \item Architected a real-time security layer detecting prompt injection and jailbreak attacks in LLMs, significantly enhancing model robustness.
+\end{itemize}
+
+\section*{Education & Leadership}
+\textbf{University Degree} | Graduation Year
+\begin{itemize}
+    \item Key Achievements: [List relevant coursework or projects]
+\end{itemize}
+\textbf{Leadership Role}
+\begin{itemize}
+    \item Description of impact and technical skills utilized.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,134 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% Set page geometry for a compact, single-page layout
+\geometry{
+    left=0.7in,
+    right=0.7in,
+    top=0.7in,
+    bottom=0.7in
+}
+
+% Customize section titles
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\section}{\vspace{2pt}\scshape\large\bfseries\uppercase}{}{0pt}{\thesection}{}[\titlerule]
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Define custom commands for contact info and dates
+\newcommand{\contact}[1]{\centering\small\faPhone #1 \quad | \quad \faEnvelope #1 \quad | \quad \faGithub #1 \quad | \quad \faLinkedin #1}
+
+% Remove default section numbering
+\setcounter{secnumry}{0}
+
+\begin{document}
+
+% =================================================================
+% HEADER / CONTACT INFO
+% =================================================================
+\pagestyle{empty}
+\begin{center}
+    \textbf{\Huge Punya Mittal} \\
+    \vspace{2pt}
+    \small AI/ML Engineer \textperiodcentered\ Full-Stack Developer \textperiodcentered\ Open Source Founder
+    \vspace{4pt}
+    \faPhone +91 8929266960 \quad | \quad \faEnvelope punya.m215@gmail.com \quad | \quad \faGithub \href{https://github.com/PunyaMittal}{GitHub} \quad | \quad \faLinkedin \href{https://linkedin.com/in/punyamittal}{LinkedIn}
+    \vspace{4pt}
+\end{center}
+
+% =================================================================
+% SUMMARY
+% =================================================================
+\section*{Summary}
+B.Tech CS (AI) student at VIT Chennai with hands-on experience building end-to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in Python, Java, and JavaScript, with applied expertise in PyTorch, TensorFlow, XGBoost, and LightGBM. Proven leader and open-source founder (250+ members). Seeking ML/Software/Backend Engineering internship or full-time role to leverage expertise in scalable AI solutions.
+
+% =================================================================
+% TECHNICAL SKILLS
+% =================================================================
+\section*{Technical Skills}
+\textbf{Languages:} Python, Java, JavaScript (ES6+) \\
+\textbf{AI/ML:} PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Prompt Engineering, Feature Engineering, Hyperparameter Tuning, AutoML \\
+\textbf{Data/Backend:} Pandas, NumPy, ETL Pipelines, Vector Databases, REST APIs, Microservices, WebRTC, Node.js \\
+\textbf{Infrastructure:} AWS, Docker, Kubernetes, Linux, CI/CD, Serverless \\
+\textbf{CS Fundamentals:} Data Structures, Algorithms, OOP, Distributed Systems, System Design, Event-Driven Architecture
+
+% =================================================================
+% EXPERIENCE
+% =================================================================
+\section*{Experience}
+
+\textbf{AI & Backend Engineering Intern} \hfill \textbf{Analytx4t Lab Pvt Ltd} \\
+\textit{Oct 2025 – Dec 2025}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Designed and deployed 10+ production REST APIs using Node.js for a financial analytics platform, optimizing response latency via connection pooling and query optimization.
+    \item Integrated distributed microservices enabling low-latency, real-time enterprise data processing across concurrent multitenant workloads.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{AI / ML Engineering Intern} \hfill \textbf{ANNAM.AI (IIT Ropar)} \\
+\textit{May 2025 – Jul 2025}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Built end-to-end ML pipelines (preprocessing, feature engineering, training, evaluation) in Python/Pandas/Scikit-learn, cutting model iteration time by 50\%.
+    \item Trained XGBoost/LightGBM gradient boosting models for agricultural intelligence systems, achieving 87%+ prediction accuracy on crop yield forecasting datasets.
+\end{itemize}
+
+% =================================================================
+% PROJECTS
+% =================================================================
+\section*{Selected Projects & Research}
+
+\textbf{AutoML Pipeline (Research Paper In Progress)}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Engineered an AutoML system converting natural language goals into deployed models via automated dataset discovery and model selection, cutting model-to-production time by 70\%.
+    \item Benchmarked RF, XGBoost, and LightGBM across 5+ datasets using Bayesian hyperparameter tuning.
+\end{itemize}
+
+\textbf{AI Jailbreak Defense System (Patent & Research In Progress)}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Architected a real-time security layer detecting prompt injection and jailbreak attacks in LLM systems with 92%+ detection accuracy.
+    \item Mapped and mitigated 10+ attack vectors (role-play injection, token smuggling, instruction override).
+\end{itemize}
+
+\textbf{GINGR — Scalable Real-Time Messaging Platform} \hfill \textbf{GitHub}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Built a WebRTC messaging/video platform supporting 3,000+ concurrent users with sub-100ms latency on AWS.
+    \item Implemented WebSocket signaling, STUN/TURN relay, and E2E encryption for high availability.
+\end{itemize}
+
+\textbf{KAI — Cognitive AI Companion (Research Paper In Progress)}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Developed an AI assistant with persistent memory and emotional state simulation using RAG and vector databases.
+    \item Designed a novel architecture for long-term context retention across multiple user sessions.
+\end{itemize}
+
+% =================================================================
+% LEADERSHIP & EDUCATION
+% =================================================================
+\section*{Leadership & Education}
+
+\textbf{Founder, Youth Season of Code (Y-SoC)} \hfill \textbf{ysoc.in}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Grew open-source ecosystem to 250+ members, 100+ projects, and mentored 55+ students across 10+ colleges within 12 months.
+\end{itemize}
+
+\textbf{Co-Founder, Hackfinity}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Co-founded an AI tools startup organizing hackathons and building developer platforms; generated INR 60,000+ revenue in the first year.
+\end{itemize}
+
+\textbf{Education}
+\textbf{Vellore Institute of Technology (VIT), Chennai} \hfill \textbf{Expected Graduation: 2028} \\
+\textit{B.Tech Computer Science (Artificial Intelligence)} \hfill \textbf{CGPA: 8.54/10}
+
+\vspace{2pt}
+\textbf{Achievements:} Winner - Code Red Hackathon Semi-Finalist; Top 25 - Shine Healthcare Hackathon; Top 30 - Hackronyx National Selected.
+
+\end{document}

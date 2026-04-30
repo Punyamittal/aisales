@@ -1,0 +1,114 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Set geometry for a single-page, dense layout
+\geometry{
+    a4paper,
+    margin=0.7in,
+}
+
+% Customizing section titles for a clean, professional look
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\section}{\vspace{2pt}\scshape\large\bfseries\uppercase}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Remove default section numbering
+\setcounter{secnumdepth}{0}
+
+% Define custom commands for contact info and skills
+\newcommand{\contactinfo}[1]{
+    \centering
+    \vspace{-10pt}
+    \hrule
+    \vspace{2pt}
+    \textbf{\Large #1} \\
+    \small \href{mailto:punya.m215@gmail.com}{punya.m215@gmail.com} | +91 8929266960 | 
+    \href{https://github.com/yourusername}{GitHub} | \href{https://linkedin.com/in/yourprofile}{LinkedIn}
+    \vspace{4pt}
+    \hrule
+}
+
+% Start Document
+\begin{document}
+
+% =================================================================
+% HEADER / CONTACT INFO
+% =================================================================
+\contactinfo{Punya Mittal}
+
+% =================================================================
+% SUMMARY
+% =================================================================
+\section*{Summary}
+Highly motivated AI/ML Engineer and Full-Stack Developer with hands-on experience building end-to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in Python and applied expertise in advanced frameworks including PyTorch, TensorFlow, XGBoost, and Retrieval-Augmented Generation (RAG). Proven ability to translate complex natural language goals into deployed, scalable AI solutions. Seeking ML/Software Engineering roles at Tesla.
+
+% =================================================================
+% SKILLS
+% =================================================================
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+    \item \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, XGBoost, LightGBM, Scikit-learn, NLP, Prompt Engineering, RAG, Feature Engineering, Hyperparameter Tuning.
+    \item \textbf{Languages \& Backend:} Python (Expert), FastAPI, SQL, Java, JavaScript (ES6+), REST APIs, Microservices.
+    \item \textbf{Data \& Tools:} Pandas, NumPy, ETL Pipelines, Vector Databases (Pinecone/Chroma), Data Preprocessing, Pandas.
+    \item \textbf{Infrastructure \& DevOps:} AWS, Docker, Kubernetes, Linux, CI/CD, Git, System Design, Distributed Systems.
+\end{itemize}
+
+% =================================================================
+% EXPERIENCE
+% =================================================================
+\section*{Experience}
+
+\textbf{AI / ML Engineering Intern} \hfill \textbf{ANNAM.AI (IIT Ropar)} \hfill May 2025 – Jul 2025
+\begin{itemize}[label=$\bullet$, itemsep=2pt]
+    \item Built end-to-end ML pipelines (preprocessing, feature engineering, training, evaluation) using Python and Pandas, reducing model iteration time by 50%.
+    \item Trained and optimized XGBoost/LightGBM gradient boosting models for agricultural intelligence, achieving 87%+ prediction accuracy on crop yield forecasting datasets.
+    \item Implemented robust model versioning and evaluation metrics to ensure production readiness and reliability.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{AI & Backend Engineering Intern} \hfill \textbf{Analytx4t Lab Pvt Ltd} \hfill Oct 2025 – Dec 2025
+\begin{itemize}[label=$\bullet$, itemsep=2pt]
+    \item Designed and deployed 10+ production REST APIs using Node.js, optimizing response latency via connection pooling and advanced query optimization techniques.
+    \item Integrated distributed microservices architecture enabling low-latency, real-time enterprise data processing across concurrent multitenant workloads.
+    \item Developed robust API documentation and utilized CI/CD practices to maintain high code quality and deployment efficiency.
+\end{itemize}
+
+% =================================================================
+% PROJECTS
+% =================================================================
+\section*{Selected Projects \& Research}
+
+\textbf{KAI — Cognitive AI Companion (RAG System)} \hfill \textit{Research Paper In Progress}
+\begin{itemize}[label=$\circ$, itemsep=1pt]
+    \item Architected an advanced AI assistant utilizing Retrieval-Augmented Generation (RAG) and vector databases for persistent memory and long-term context retention.
+    \item Designed a novel system architecture to simulate emotional state and maintain context across multiple user sessions, significantly enhancing user experience.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{AutoML Pipeline — Natural Language to Deployed Model} \hfill \textit{Research Paper In Progress}
+\begin{itemize}[label=$\circ$, itemsep=1pt]
+    \item Engineered an AutoML system that converts natural language goals into fully deployed ML models via automated dataset discovery and model selection.
+    \item Benchmarked Random Forest, XGBoost, and LightGBM across 5+ diverse datasets, cutting model-to-production time by 70% using Bayesian hyperparameter tuning.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{GINGR — Scalable Real-Time Messaging Platform} \hfill \textit{GitHub Project}
+\begin{itemize}[label=$\circ$, itemsep=0pt]
+    \item Developed a real-time communication platform supporting thousands of concurrent users.
+    \item Implemented robust backend services using distributed systems principles, ensuring high availability and low latency.
+\end{itemize}
+
+% =================================================================
+% =================================================================
+
+\end{document}

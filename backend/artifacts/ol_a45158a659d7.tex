@@ -1,0 +1,118 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% Set page geometry for a clean, single-page look
+\geometry{
+    a4paper,
+    margin=0.7in,
+}
+
+% Customizing section titles
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titleformat{\section}{\vspace{-4pt}\scshape\large\bfseries\uppercase}{}{0pt}{\thesection}{}[\titlerule]
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Define custom commands for contact info and skills
+\newcommand{\contact}[1]{\item[\textbf{#1}] \href{https://#1}{#1}}
+
+% Remove default section numbering
+\setcounter{secnumry}{0}
+
+\begin{document}
+
+% =================================================================
+% HEADER / CONTACT INFO
+% =================================================================
+\begin{center}
+    {\Huge \textbf{Punya Mittal}} \\
+    \vspace{2pt}
+    \small AI/ML Engineer \textperiodcentered\ Full-Stack Developer \textperiodcentered\ Open Source Founder
+    \vspace{4pt}
+    \small
+    \faPhone | \faEnvelope | \faGithub | \faLinkedin
+    \vspace{2pt}
+    \small
+    (91) 8929266960 \textperiodcentered\ punya.m215@gmail.com \textperiodcentered\ \href{https://github.com/yourusername}{GitHub} \textperiodcentered\ \href{https://linkedin.com/in/yourprofile}{LinkedIn}
+\end{center}
+
+% =================================================================
+% SUMMARY
+% =================================================================
+\section*{Summary}
+Highly motivated AI/ML Engineer and Full-Stack Developer with hands-on experience building end-to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in Python, PyTorch, TensorFlow, and advanced ML techniques including **RAG**, **XGBoost**, and **FastAPI**. Proven ability to translate complex natural language goals into deployed, scalable AI solutions. Seeking ML/Software Engineering internships to drive innovation.
+
+% =================================================================
+% SKILLS (Two-column layout for density)
+% =================================================================
+\section*{Technical Skills}
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Prompt Engineering, Feature Engineering, AutoML.
+    \vspace{3pt}
+    \textbf{Languages:} Python (Expert), Java, JavaScript (ES6+).
+    \vspace{3pt}
+    \textbf{Databases/Backend:} SQL (MySQL), MongoDB, Vector Databases, FastAPI, REST APIs, Microservices.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Cloud/Infra:} AWS, Docker, Kubernetes, Linux, CI/CD, Serverless, WebRTC.
+    \vspace{3pt}
+    \textbf{Core CS:} Data Structures, Algorithms, OOP, Distributed Systems, System Design, Event-Driven Architecture.
+    \vspace{3pt}
+    \textbf{Tools:} Pandas, NumPy, ETL Pipelines, Git, Jupyter.
+\end{minipage}
+
+% =================================================================
+% EXPERIENCE
+% =================================================================
+\section*{Experience}
+
+\textbf{AI & Backend Engineering Intern} \hfill \emph{Oct 2025 – Dec 2025} \\
+\textit{Analytx4t Lab Pvt Ltd}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Designed and deployed 10+ production REST APIs using Python/Node.js, optimizing response latency via connection pooling and query optimization for a financial analytics platform.
+    \item Integrated distributed microservices enabling low-latency, real-time enterprise data processing across concurrent multitenant workloads.
+    \item Utilized SQL and backend architecture principles to ensure data integrity and scalability for high-volume financial data streams.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{AI / ML Engineering Intern} \hfill \emph{May 2025 – Jul 2025} \\
+\textit{ANNAM.AI (IIT Ropar)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Built end-to-end ML pipelines (preprocessing, feature engineering, training, evaluation) in Python and Pandas, cutting model iteration time by 50\%.
+    \item Trained advanced gradient boosting models (**XGBoost**, LightGBM) for agricultural intelligence systems, achieving 87%+ prediction accuracy on crop yield forecasting datasets.
+    \item Applied statistical modeling and data cleaning techniques to handle complex, real-world datasets.
+\end{itemize}
+
+% =================================================================
+% PROJECTS
+% =================================================================
+\section*{Selected Projects & Research}
+
+\textbf{KAI — Cognitive AI Companion} \hfill \emph{Research Paper In Progress}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Developed an AI assistant with persistent memory and emotional state simulation by implementing a **RAG** (Retrieval-Augmented Generation) architecture.
+    \item Designed a novel system utilizing **vector databases** for long-term context retention, allowing the AI to maintain coherence across multiple user sessions.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{AutoML Pipeline} \hfill \emph{Natural Language to Model}
+\begin{itemize}
+    \item Developed an automated pipeline that ingests natural language requirements and generates functional machine learning models.
+    \item Implemented comparative testing using **TensorFlow** and **PyTorch**, achieving state-of-the-art performance metrics.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{AI Security & Threat Detection System}
+\begin{itemize}
+    \item Built a real-time anomaly detection system using time-series data, achieving high precision in identifying zero-day threats.
+    \item Utilized **Scikit-learn**

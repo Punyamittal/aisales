@@ -2,8 +2,9 @@
 import logging
 import asyncio
 import httpx
+from typing import Any
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from app.models.schemas import ProjectInput, CompanyInput
 
@@ -23,8 +24,24 @@ from app.agents.runner import (
 )
 from app.services.rewards import get_reward
 from app.services.github_service import fetch_repo, parse_github_url
+from app.services.ats_engine import score_ats
 from app.services.lead_enrichment import enrich_suggested_companies
 from app.services.email_service import send_email
+from app.services.job_application_pipeline import (
+    index_jobs_for_rag,
+    index_resume_for_rag,
+    rag_architecture_overview,
+    retrieve_top_matching_jobs,
+    run_job_application_pipeline,
+    sample_pipeline_input,
+    sample_pipeline_output,
+)
+from app.services.outreach_engine import (
+    build_outreach_package,
+    send_campaign,
+    get_campaign_tracking,
+    sample_outreach_input,
+)
 from config import get_settings
 
 router = APIRouter(prefix="/api", tags=["api"])
@@ -66,6 +83,49 @@ class ManagerRequest(BaseModel):
     status_summary: str
     last_agent_outputs: list[str]
     metrics_summary: str
+
+
+class JobApplicationPipelineRequest(BaseModel):
+    role: str
+    company: str
+    links: dict[str, str]
+
+
+class OutreachGenerateRequest(BaseModel):
+    company: str
+    role: str
+    candidate_profile: dict[str, str]
+    job_description: str = ""
+    outreach_types: list[str] = Field(
+        default_factory=lambda: ["referral_request", "internship_inquiry", "networking_message"]
+    )
+
+
+class OutreachSendRequest(BaseModel):
+    campaign_id: str
+    generated_messages: list[dict]
+    tone: str = "formal"
+    sender_name: str = "AI Sales Bot"
+
+
+class ATSScoreRequest(BaseModel):
+    resume_text: str
+    job_description: str
+
+
+class RagJobsIndexRequest(BaseModel):
+    jobs: list[dict]
+
+
+class RagResumeIndexRequest(BaseModel):
+    resume_id: str
+    resume_text: str
+    metadata: dict[str, Any] = Field(default_factory=dict)
+
+
+class RagRetrieveRequest(BaseModel):
+    candidate_text: str
+    top_k: int = 3
 
 
 async def _ollama_reachable() -> bool:
@@ -348,3 +408,117 @@ async def rewards():
     """Return reward model (category -> base reward)."""
     from app.models.schemas import REWARD_VALUES
     return REWARD_VALUES
+
+
+@router.post("/job-application/pipeline")
+async def job_application_pipeline(req: JobApplicationPipelineRequest):
+    """
+    Run first working resume pipeline:
+    jobs -> match -> skills -> profile parse -> resume -> LaTeX -> PDF -> ATS score.
+    """
+    try:
+        result = await run_job_application_pipeline(req.role, req.company, req.links)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.get("/job-application/pipeline/sample")
+async def job_application_pipeline_sample():
+    """Return sample input/output for the pipeline."""
+    return {
+        "sample_input": sample_pipeline_input(),
+        "sample_output": sample_pipeline_output(),
+    }
+
+
+@router.get("/job-application/rag/architecture")
+async def job_application_rag_architecture():
+    """RAG architecture, flow diagram, and recommended tech stack."""
+    return rag_architecture_overview()
+
+
+@router.post("/job-application/rag/index/jobs")
+async def job_application_rag_index_jobs(req: RagJobsIndexRequest):
+    """Create embeddings for jobs and store vectors."""
+    try:
+        return await index_jobs_for_rag(req.jobs)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/job-application/rag/index/resume")
+async def job_application_rag_index_resume(req: RagResumeIndexRequest):
+    """Create embeddings for resume text and store vectors."""
+    try:
+        return await index_resume_for_rag(req.resume_id, req.resume_text, req.metadata)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/job-application/rag/retrieve-jobs")
+async def job_application_rag_retrieve_jobs(req: RagRetrieveRequest):
+    """Retrieve top matching jobs from vector index."""
+    try:
+        matches = await retrieve_top_matching_jobs(req.candidate_text, req.top_k)
+        return {"matches": matches, "count": len(matches)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/ats/score")
+async def ats_score(req: ATSScoreRequest):
+    """Score resume text against a job description."""
+    try:
+        return score_ats(req.resume_text, req.job_description)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/outreach/generate")
+async def outreach_generate(req: OutreachGenerateRequest):
+    """
+    Build outreach package:
+    find employees -> generate personalized email variants -> create tracking record.
+    """
+    try:
+        return await build_outreach_package(
+            company=req.company,
+            role=req.role,
+            candidate_profile=req.candidate_profile,
+            job_description=req.job_description,
+            outreach_types=req.outreach_types,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/outreach/send")
+async def outreach_send(req: OutreachSendRequest):
+    """Send generated emails and update campaign tracking statuses/timestamps."""
+    try:
+        return await send_campaign(
+            campaign_id=req.campaign_id,
+            generated_messages=req.generated_messages,
+            tone=req.tone,
+            sender_name=req.sender_name,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.get("/outreach/tracking/{campaign_id}")
+async def outreach_tracking(campaign_id: str):
+    """Read outreach tracking state for one campaign."""
+    try:
+        return get_campaign_tracking(campaign_id)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+@router.get("/outreach/sample")
+async def outreach_sample():
+    """Sample outreach input and generated output preview."""
+    sample_input = sample_outreach_input()
+    sample_output = await build_outreach_package(**sample_input)
+    return {"sample_input": sample_input, "sample_output": sample_output}

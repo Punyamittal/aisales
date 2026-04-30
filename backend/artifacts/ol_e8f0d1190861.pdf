@@ -1,0 +1,214 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5393 >>
+stream
+BT
+/F1 10 Tf
+45 800 Td
+(article) Tj
+0 -12 Td
+(inputenc) Tj
+0 -12 Td
+(fontenc) Tj
+0 -12 Td
+(amsmath) Tj
+0 -12 Td
+(geometry) Tj
+0 -12 Td
+(titlesec) Tj
+0 -12 Td
+(enumitem) Tj
+0 -12 Td
+(hyperref) Tj
+0 -12 Td
+(fontawesome) Tj
+0 -12 Td
+(xcolor) Tj
+0 -12 Td
+(% Set page geometry for a clean, single-page look) Tj
+0 -12 Td
+(left=0.7in,) Tj
+0 -12 Td
+(right=0.7in,) Tj
+0 -12 Td
+(top=0.7in,) Tj
+0 -12 Td
+(bottom=0.7in) Tj
+0 -12 Td
+(% Customize section titles \(removes numbering, adds spacing\)) Tj
+0 -12 Td
+(0pt12pt4pt) Tj
+0 -12 Td
+(2pt 1em) Tj
+0 -12 Td
+(0pt8pt2pt) Tj
+0 -12 Td
+(% Custom command for contact info) Tj
+0 -12 Td
+([1]) Tj
+0 -12 Td
+(0.5em) Tj
+0 -12 Td
+(#1) Tj
+0 -12 Td
+(0.1em) Tj
+0 -12 Td
+(\\ \(91\) 8929266960 \\ punya.m215@gmail.com \\ \\ #1github.com/PunyaMittal \\ \\ Chennai, India) Tj
+0 -12 Td
+(0.5em) Tj
+0 -12 Td
+(% Remove default section numbering) Tj
+0 -12 Td
+(secnumry-1) Tj
+0 -12 Td
+(Punya Mittal) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Summary) Tj
+0 -12 Td
+(Highly motivated AI/ML Engineer and Full-Stack Developer with hands-on experience building end-) Tj
+0 -12 Td
+(to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in) Tj
+0 -12 Td
+(Python and advanced frameworks including PyTorch, TensorFlow, and XGBoost. Proven ability to) Tj
+0 -12 Td
+(implement complex systems like RAG architectures and secure LLM layers. Seeking an AI/ML) Tj
+0 -12 Td
+(Engineering internship to leverage expertise in deep learning, backend development, and open-) Tj
+0 -12 Td
+(source leadership.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Technical Skills) Tj
+0 -12 Td
+([leftmargin=*, itemsep=2pt, parsep=0pt]) Tj
+0 -12 Td
+(- AI/ML Frameworks: PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Prompt) Tj
+0 -12 Td
+(Engineering, Feature Engineering, AutoML.) Tj
+0 -12 Td
+(- Languages: Python \(Expert\), Java, JavaScript \(ES6+\).) Tj
+0 -12 Td
+(- Backend/Web: FastAPI, REST APIs, Node.js, Microservices, WebRTC, API Architecture.) Tj
+0 -12 Td
+(- Data & Databases: Pandas, NumPy, SQL, MongoDB, Vector Databases \(Pinecone/Chroma\), ETL) Tj
+0 -12 Td
+(Pipelines.) Tj
+0 -12 Td
+(- Infrastructure: AWS, Docker, Kubernetes, Linux, CI/CD, Serverless Computing.) Tj
+0 -12 Td
+(- CS Fundamentals: Data Structures, Algorithms, OOP, Distributed Systems, System Design.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Experience) Tj
+0 -12 Td
+(AI / ML Engineering Intern May 2025 ? Jul 2025) Tj
+0 -12 Td
+(ANNAM.AI \(IIT Ropar\)) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Built end-to-end ML pipelines \(preprocessing, feature engineering, training, evaluation\)) Tj
+0 -12 Td
+(using Python and Pandas, reducing model iteration time by 50\\%.) Tj
+0 -12 Td
+(- Trained and optimized XGBoost and LightGBM gradient boosting models for agricultural) Tj
+0 -12 Td
+(intelligence, achieving 87%+ prediction accuracy on crop yield forecasting datasets.) Tj
+0 -12 Td
+(- Implemented robust data validation and feature scaling techniques, ensuring model reliability) Tj
+0 -12 Td
+(across diverse datasets.) Tj
+0 -12 Td
+(AI & Backend Engineering Intern Oct 2025 ? Dec 2025) Tj
+0 -12 Td
+(Analytx4t Lab Pvt Ltd) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Designed and deployed 10+ production REST APIs using Node.js, optimizing response latency via) Tj
+0 -12 Td
+(connection pooling and advanced query optimization.) Tj
+0 -12 Td
+(- Integrated distributed microservices architecture, enabling low-latency, real-time enterprise) Tj
+0 -12 Td
+(data processing across concurrent multitenant workloads.) Tj
+0 -12 Td
+(- Developed backend services utilizing SQL databases, managing data flow and ensuring) Tj
+0 -12 Td
+(transactional integrity for financial analytics.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Selected Projects & Research) Tj
+0 -12 Td
+(KAI ? Cognitive AI Companion \(RAG System\)) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Developed an advanced AI assistant featuring persistent memory and emotional state simulation) Tj
+0 -12 Td
+(using a Retrieval-Augmented Generation \(RAG\) architecture.) Tj
+0 -12 Td
+(- Designed a novel system utilizing Vector Databases for long-term context retention, allowing) Tj
+0 -12 Td
+(the AI to maintain coherence across multiple user sessions.) Tj
+0 -12 Td
+(AutoML Pipeline ? Natural Language to Deployed Model) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Engineered an automated system converting natural language goals into deployable ML models,) Tj
+0 -12 Td
+(cutting model-to-production time by 70\\%.) Tj
+0 -12 Td
+(- Benchmarked Random Forest, XGBoost, and LightGBM across 5+ datasets, demonstrating robust) Tj
+0 -12 Td
+(model selection capabilities.) Tj
+0 -12 Td
+(0.5em) Tj
+0 -12 Td
+(Security & NLP: Developed a system to detect and classify malicious inputs, demonstrating) Tj
+0 -12 Td
+(proficiency in advanced data processing and security protocols.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Technical Skills) Tj
+0 -12 Td
+(Languages: Python \(Advanced\), SQL, JavaScript, Bash.) Tj
+0 -12 Td
+(Frameworks/Libraries: PyTorch, TensorFlow, Scikit-learn, FastAPI, Pandas, NumPy.) Tj
+0 -12 Td
+(Tools/Concepts: Docker, Git,) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000005686 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+5756
+%%EOF

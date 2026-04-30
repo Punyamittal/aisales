@@ -20,3 +20,58 @@ body {
   border: 1px solid var(--border);
   border-radius: 0.75rem;
 }
+
+.output-card {
+  background: rgba(24, 24, 27, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.output-subcard {
+  background: rgba(9, 9, 11, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+}
+
+.kv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  border: 1px solid transparent;
+}
+
+.status-badge.success {
+  color: #6ee7b7;
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.status-badge.warning {
+  color: #fde68a;
+  background: rgba(234, 179, 8, 0.15);
+  border-color: rgba(234, 179, 8, 0.35);
+}
+
+.status-badge.error {
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.status-badge.info {
+  color: #67e8f9;
+  background: rgba(34, 211, 238, 0.12);
+  border-color: rgba(34, 211, 238, 0.35);
+}

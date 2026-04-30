@@ -1,0 +1,96 @@
+\documentclass[a4paper,9.5pt]{article}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\geometry{top=0.38in, bottom=0.38in, left=0.45in, right=0.45in}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{accent}{RGB}{0,70,127}
+\definecolor{subtext}{RGB}{85,85,85}
+
+\titleformat{\section}{\normalsize\bfseries\color{accent}}{}{0em}{}
+[\vspace{-3pt}\textcolor{accent}{\rule{\linewidth}{0.5pt}}]
+
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+\setlist[itemize]{
+  noitemsep,
+  topsep=0pt,
+  partopsep=0pt,
+  leftmargin=12pt,
+  label=\textbullet,
+  itemsep=0.5pt
+}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+{\Large\textbf{\textcolor{accent}{%%NAME%%}}}\\[2pt]
+{\small
+  Chennai, India \textbar{} +91 8929266960 \textbar{}
+  \href{mailto:punya.m215@gmail.com}{punya.m215@gmail.com} \textbar{}
+  \href{https://github.com/Punyamittal}{GitHub (148 repositories, 692 contributions)} \textbar{}
+  \href{https://linkedin.com/in/punyamittal}{LinkedIn}
+}
+\end{center}
+
+\vspace{2pt}
+
+% SUMMARY
+\section*{Summary}
+{\small
+%%SUMMARY%%
+}
+
+% TECHNICAL SKILLS
+\section*{Technical Skills}
+{\small
+\begin{itemize}
+%%SKILLS%%
+\end{itemize}
+}
+
+% EXPERIENCE
+\section*{Experience}
+\begin{itemize}
+%%EXPERIENCE%%
+\end{itemize}
+
+% PROJECTS
+\section*{Projects}
+\begin{itemize}
+%%PROJECTS%%
+\end{itemize}
+
+% EDUCATION
+\section*{Education}
+\noindent\textbf{Vellore Institute of Technology, Chennai} \hfill \textit{2024 -- 2028}\\
+{\small B.Tech Computer Science (Artificial Intelligence) \hfill \textbf{CGPA: 8.54/10}}
+
+% LEADERSHIP & ACTIVITIES
+\section*{Leadership \& Activities}
+{\small
+\noindent\textbf{General Secretary} -- IE(I) Student Chapter, VIT \hfill
+\textbf{Founder} -- YSoC Open Source Community \href{https://ysoc.in}{(ysoc.in)}: 250+ members, 100+ projects, 55+ mentors\\[1pt]
+\noindent\textbf{Technical Lead} -- VoiceIT Club, VIT Chennai \hfill
+\textbf{Co-Founder \& CEO} -- Hackfinity\\[1pt]
+\noindent\textbf{Organizer} -- HackHub 2025 (580+ participants, 40+ teams) \hfill
+\textbf{Winner} -- Code Red Inter-College Hackathon (2025)\\[1pt]
+\noindent\textbf{Industry Sponsor} -- Gemminathon Hackathon (VIT Chennai)
+}
+
+\end{document}

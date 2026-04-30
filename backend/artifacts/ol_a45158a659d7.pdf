@@ -1,0 +1,242 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5864 >>
+stream
+BT
+/F1 10 Tf
+45 800 Td
+(article) Tj
+0 -12 Td
+(inputenc) Tj
+0 -12 Td
+(fontenc) Tj
+0 -12 Td
+(amsmath) Tj
+0 -12 Td
+(geometry) Tj
+0 -12 Td
+(titlesec) Tj
+0 -12 Td
+(enumitem) Tj
+0 -12 Td
+(hyperref) Tj
+0 -12 Td
+(fontawesome) Tj
+0 -12 Td
+(xcolor) Tj
+0 -12 Td
+(% Set page geometry for a clean, single-page look) Tj
+0 -12 Td
+(a4paper,) Tj
+0 -12 Td
+(margin=0.7in,) Tj
+0 -12 Td
+(% Customizing section titles) Tj
+0 -12 Td
+(0pt10pt4pt) Tj
+0 -12 Td
+(-4pt 0pt [ ]) Tj
+0 -12 Td
+(0pt8pt2pt) Tj
+0 -12 Td
+(% Define custom commands for contact info and skills) Tj
+0 -12 Td
+([1]) Tj
+0 -12 Td
+(- [ #1] https://#1#1) Tj
+0 -12 Td
+(% Remove default section numbering) Tj
+0 -12 Td
+(secnumry0) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% HEADER / CONTACT INFO) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Punya Mittal) Tj
+0 -12 Td
+(2pt) Tj
+0 -12 Td
+(AI/ML Engineer \\ Full-Stack Developer \\ Open Source Founder) Tj
+0 -12 Td
+(4pt) Tj
+0 -12 Td
+(| | |) Tj
+0 -12 Td
+(2pt) Tj
+0 -12 Td
+(\(91\) 8929266960 \\ punya.m215@gmail.com \\ https://github.com/yourusernameGitHub \\) Tj
+0 -12 Td
+(https://linkedin.com/in/yourprofileLinkedIn) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% SUMMARY) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Summary) Tj
+0 -12 Td
+(Highly motivated AI/ML Engineer and Full-Stack Developer with hands-on experience building end-) Tj
+0 -12 Td
+(to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in) Tj
+0 -12 Td
+(Python, PyTorch, TensorFlow, and advanced ML techniques including **RAG**, **XGBoost**, and) Tj
+0 -12 Td
+(**FastAPI**. Proven ability to translate complex natural language goals into deployed, scalable) Tj
+0 -12 Td
+(AI solutions. Seeking ML/Software Engineering internships to drive innovation.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% SKILLS \(Two-column layout for density\)) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Technical Skills) Tj
+0 -12 Td
+([t]0.48) Tj
+0 -12 Td
+(AI/ML Frameworks: PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Prompt) Tj
+0 -12 Td
+(Engineering, Feature Engineering, AutoML.) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(Languages: Python \(Expert\), Java, JavaScript \(ES6+\).) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(Databases/Backend: SQL \(MySQL\), MongoDB, Vector Databases, FastAPI, REST APIs, Microservices.) Tj
+0 -12 Td
+([t]0.48) Tj
+0 -12 Td
+(Cloud/Infra: AWS, Docker, Kubernetes, Linux, CI/CD, Serverless, WebRTC.) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(Core CS: Data Structures, Algorithms, OOP, Distributed Systems, System Design, Event-Driven) Tj
+0 -12 Td
+(Architecture.) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(Tools: Pandas, NumPy, ETL Pipelines, Git, Jupyter.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% EXPERIENCE) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Experience) Tj
+0 -12 Td
+(AI & Backend Engineering Intern Oct 2025 ? Dec 2025) Tj
+0 -12 Td
+(Analytx4t Lab Pvt Ltd) Tj
+0 -12 Td
+([leftmargin=*, itemsep=2pt]) Tj
+0 -12 Td
+(- Designed and deployed 10+ production REST APIs using Python/Node.js, optimizing response) Tj
+0 -12 Td
+(latency via connection pooling and query optimization for a financial analytics platform.) Tj
+0 -12 Td
+(- Integrated distributed microservices enabling low-latency, real-time enterprise data) Tj
+0 -12 Td
+(processing across concurrent multitenant workloads.) Tj
+0 -12 Td
+(- Utilized SQL and backend architecture principles to ensure data integrity and scalability for) Tj
+0 -12 Td
+(high-volume financial data streams.) Tj
+0 -12 Td
+(6pt) Tj
+0 -12 Td
+(AI / ML Engineering Intern May 2025 ? Jul 2025) Tj
+0 -12 Td
+(ANNAM.AI \(IIT Ropar\)) Tj
+0 -12 Td
+([leftmargin=*, itemsep=2pt]) Tj
+0 -12 Td
+(- Built end-to-end ML pipelines \(preprocessing, feature engineering, training, evaluation\) in) Tj
+0 -12 Td
+(Python and Pandas, cutting model iteration time by 50\\%.) Tj
+0 -12 Td
+(- Trained advanced gradient boosting models \(**XGBoost**, LightGBM\) for agricultural) Tj
+0 -12 Td
+(intelligence systems, achieving 87%+ prediction accuracy on crop yield forecasting datasets.) Tj
+0 -12 Td
+(- Applied statistical modeling and data cleaning techniques to handle complex, real-world) Tj
+0 -12 Td
+(datasets.) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(% PROJECTS) Tj
+0 -12 Td
+(% =================================================================) Tj
+0 -12 Td
+(Selected Projects & Research) Tj
+0 -12 Td
+(KAI ? Cognitive AI Companion Research Paper In Progress) Tj
+0 -12 Td
+([leftmargin=*, itemsep=1pt]) Tj
+0 -12 Td
+(- Developed an AI assistant with persistent memory and emotional state simulation by) Tj
+0 -12 Td
+(implementing a **RAG** \(Retrieval-Augmented Generation\) architecture.) Tj
+0 -12 Td
+(- Designed a novel system utilizing **vector databases** for long-term context retention,) Tj
+0 -12 Td
+(allowing the AI to maintain coherence across multiple user sessions.) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(AutoML Pipeline Natural Language to Model) Tj
+0 -12 Td
+(- Developed an automated pipeline that ingests natural language requirements and generates) Tj
+0 -12 Td
+(functional machine learning models.) Tj
+0 -12 Td
+(- Implemented comparative testing using **TensorFlow** and **PyTorch**, achieving state-of-the-) Tj
+0 -12 Td
+(art performance metrics.) Tj
+0 -12 Td
+(3pt) Tj
+0 -12 Td
+(AI Security & Threat Detection System) Tj
+0 -12 Td
+(- Built a real-time anomaly detection system using time-series data, achieving high precision) Tj
+0 -12 Td
+(in identifying zero-day threats.) Tj
+0 -12 Td
+(- Utilized **Scikit-learn**) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000006157 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+6227
+%%EOF

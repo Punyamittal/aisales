@@ -1,0 +1,99 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+
+% Set page geometry for a compact, single-page layout
+\geometry{
+    left=0.7in,
+    right=0.7in,
+    top=0.7in,
+    bottom=0.7in
+}
+
+% Customizing section titles
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\section}{\vspace{-4pt}\scshape\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Define custom commands for contact info and skills
+\newcommand{\contactinfo}[1]{
+    \centering
+    \vspace{2pt}
+    \textbf{\Huge #1} \\
+    \vspace{2pt}
+    \small \href{mailto:punya.m215@gmail.com}{punya.m215@gmail.com} | +91 8929266960 | 
+    \href{https://github.com/PunyaMittal}{GitHub} | \href{https://linkedin.com/in/punyamittal}{LinkedIn}
+    \vspace{4pt}
+}
+
+% Remove default section spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+\contactinfo{Punya Mittal}
+
+% =================================================================
+\section*{Summary}
+Highly motivated AI/ML Engineer and Full-Stack Developer with hands-on experience building end-to-end ML pipelines, production REST APIs, and real-time distributed systems. Proficient in Python and applied expertise in advanced frameworks including PyTorch, TensorFlow, and XGBoost. Proven ability to translate complex natural language goals into deployed, functional AI solutions. Seeking an ML/Software Engineering Internship.
+
+% =================================================================
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+    \item \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, RAG, Feature Engineering, Hyperparameter Tuning.
+    \item \textbf{Languages \& Backend:} Python (Expert), JavaScript (ES6+), Java, FastAPI, Node.js, REST APIs, SQL, Pandas, NumPy.
+    \item \textbf{Web \& Infrastructure:} React, Microservices, Docker, Kubernetes, AWS, CI/CD, WebRTC, Event-Driven Architecture.
+    \item \textbf{Databases \& Tools:} MongoDB, MySQL, Vector Databases (Pinecone/Chroma), Git, Jupyter.
+\end{itemize}
+
+% =================================================================
+\section*{Experience}
+\textbf{AI & Backend Engineering Intern} | Analytx4t Lab Pvt Ltd | Oct 2025 – Dec 2025
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Designed and deployed 10+ production REST APIs using Node.js, optimizing response latency via connection pooling and advanced query optimization.
+    \item Integrated distributed microservices architecture, enabling low-latency, real-time enterprise data processing across concurrent multitenant workloads.
+    \item Developed robust backend systems utilizing SQL and Python for data ingestion and transformation pipelines.
+\end{itemize}
+
+\textbf{AI / ML Engineering Intern} | ANNAM.AI (IIT Ropar) | May 2025 – Jul 2025
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Built end-to-end ML pipelines (preprocessing, feature engineering, training, evaluation) in Python and Pandas, cutting model iteration time by 50\%.
+    \item Trained and optimized XGBoost and LightGBM gradient boosting models for agricultural intelligence, achieving 87%+ prediction accuracy on crop yield forecasting datasets.
+    \item Implemented model versioning and deployment strategies, ensuring reproducibility and scalability of ML assets.
+\end{itemize}
+
+% =================================================================
+\section*{Selected Projects \& Research}
+\textbf{KAI — Cognitive AI Companion (RAG System)} \hfill \textit{Research Paper In Progress}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Architected an advanced AI assistant featuring persistent memory and emotional state simulation using Retrieval-Augmented Generation (RAG) and vector databases.
+    \item Designed a novel context retention architecture, allowing the model to maintain long-term context across multiple user sessions.
+\end{itemize}
+
+\textbf{AutoML Pipeline — Natural Language to Deployed Model} \hfill \textit{Research Paper In Progress}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Engineered an AutoML system that converts natural language goals into fully deployed models via automated dataset discovery and model selection.
+    \item Benchmarked Random Forest, XGBoost, and LightGBM across 5+ datasets, utilizing Bayesian hyperparameter tuning to cut model-to-production time by 70\%.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Advanced Security & Networking Simulation}
+\begin{itemize}
+    \item Developed a comprehensive simulation environment to model complex network traffic and security vulnerabilities, demonstrating deep understanding of networking protocols and threat modeling.
+\end{itemize}
+
+
+\section*{Technical Skills}
+\textbf{Languages:} Python (Advanced), SQL, JavaScript, Bash
+\textbf{Frameworks/Libraries:} PyTorch, TensorFlow, Scikit-learn, FastAPI, Pandas, NumPy
+\textbf{Tools/Concepts:} Docker, Git, REST APIs, Cloud Computing (AWS/

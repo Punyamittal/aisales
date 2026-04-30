@@ -1,0 +1,108 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% Set margins for a compact, one-page layout
+\geometry{
+    left=0.7in,
+    right=0.7in,
+    top=0.7in,
+    bottom=0.7in
+}
+
+% Customizing section titles for a clean, professional look
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+\titleformat{\section}{\vspace{2pt}\scshape\raggedright\large\bfseries}{}{0pt}{\vspace{2pt}}
+\titlespacing*{\subsection}{0pt}{10pt}{2pt}
+
+% Remove default section numbering
+\setcounter{secnumry}{-1}
+
+% Custom command for job entries
+\newcommand{\jobentry}[4]{
+    \vspace{4pt}
+    \textbf{#1} \hfill \textbf{#2} \\
+    \textit{#3} \hfill \textit{#4}
+    \vspace{-2pt}
+}
+
+% Start Document
+\begin{document}
+
+% =================================================================
+% HEADER
+% =================================================================
+\begin{center}
+    \Huge \textbf{Punya Mittal} \\
+    \vspace{2pt}
+    \em (123) 456-7890 \textperiodcentered\ \href{mailto:punya.mittal@email.com}{punya.mittal@email.com} \textperiodcentered\ \href{https://linkedin.com/in/punyamittal}{LinkedIn Profile}
+\end{center}
+
+% =================================================================
+% SUMMARY
+% =================================================================
+\section*{Summary}
+Highly motivated and results-driven Software Engineer with 2+ years of experience specializing in building robust, scalable backend services using Python and FastAPI. Proficient in designing efficient SQL database schemas and implementing full-lifecycle RESTful APIs. Proven ability to translate complex business requirements into clean, maintainable, and high-performance code, aiming to contribute immediately to challenging engineering roles.
+
+% =================================================================
+% SKILLS
+% =================================================================
+\section*{Skills}
+\textbf{Languages:} Python (Advanced), SQL, JavaScript, HTML/CSS \\
+\textbf{Frameworks/Libraries:} FastAPI, Django, Flask, Pydantic, SQLAlchemy, Pandas \\
+\textbf{Databases:} PostgreSQL, MySQL, SQLite \\
+\textbf{Tools/DevOps:} Git, Docker, REST APIs, Unit Testing (Pytest), Agile Methodologies
+
+% =================================================================
+% EXPERIENCE
+% =================================================================
+\section*{Experience}
+
+\jobentry{Software Developer Intern}{Tech Solutions Corp}{Summer 2023 - Present}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Developed and optimized core backend microservices using \textbf{FastAPI} and Python, handling over 10,000 requests daily with 99.9\% uptime.
+    \item Designed and implemented complex data models and optimized query performance by refactoring SQL queries in PostgreSQL, reducing average API latency by 25\%.
+    \item Built comprehensive API endpoints for user authentication and data retrieval, ensuring adherence to OAuth 2.0 standards and robust error handling.
+    \item Collaborated with cross-functional teams in an Agile environment, participating in code reviews and contributing to CI/CD pipelines using Git and Docker.
+\end{itemize}
+
+\jobentry{Junior Developer}{Academic Tech Inc}{Jan 2022 - May 2023}{On-site}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Contributed to the development of a customer portal backend using Python/Flask, managing user data and transaction records.
+    \item Wrote stored procedures and optimized database interactions using raw SQL, improving data integrity and query speed for reporting modules.
+    \item Implemented unit and integration tests using Pytest, increasing overall code coverage by 15\% and improving system reliability.
+\end{itemize}
+
+% =================================================================
+% PROJECTS
+% =================================================================
+\section*{Projects}
+\textbf{Inventory Management API (Python, FastAPI, PostgreSQL)}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Designed and deployed a complete RESTful API for tracking inventory, allowing CRUD operations for multiple product categories.
+    \item Utilized \textbf{FastAPI} with Pydantic for request validation and type hinting, ensuring data integrity at the API layer.
+    \item Managed the entire data persistence layer using PostgreSQL, implementing complex relational schemas and transactional logic via SQLAlchemy ORM.
+    \item Deployed the application using Docker containers, ensuring environment consistency across development and staging.
+\end{itemize}
+
+\textbf{Personal Portfolio Site Backend (Python, SQL)}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item Built a lightweight backend to power a personal portfolio, featuring user submission forms and data storage.
+    \item Handled form submissions and data validation using Python, storing structured data in a SQLite database.
+    \item Focused on clean code architecture and modular design, demonstrating proficiency in backend logic flow.
+\end{itemize}
+
+% =================================================================
+% EDUCATION
+% =================================================================
+\section*{Education}
+\textbf{Bachelor of Technology in Computer Science Engineering}
+\hfill \textbf{University Name} \hfill Graduation: May 2022 \\
+\textit{Relevant Coursework:} Data Structures and Algorithms, Database Management Systems, Object-Oriented Programming.
+
+\end{document}

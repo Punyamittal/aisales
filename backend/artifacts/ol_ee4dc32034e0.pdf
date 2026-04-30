@@ -1,0 +1,184 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4652 >>
+stream
+BT
+/F1 10 Tf
+45 800 Td
+(article) Tj
+0 -12 Td
+(inputenc) Tj
+0 -12 Td
+(fontenc) Tj
+0 -12 Td
+(amsmath) Tj
+0 -12 Td
+(geometry) Tj
+0 -12 Td
+(titlesec) Tj
+0 -12 Td
+(enumitem) Tj
+0 -12 Td
+(hyperref) Tj
+0 -12 Td
+(fontawesome) Tj
+0 -12 Td
+(xcolor) Tj
+0 -12 Td
+(% Set geometry for a clean, single-page layout) Tj
+0 -12 Td
+(left=0.7in,) Tj
+0 -12 Td
+(right=0.7in,) Tj
+0 -12 Td
+(top=0.7in,) Tj
+0 -12 Td
+(bottom=0.7in) Tj
+0 -12 Td
+(% Customizing section titles) Tj
+0 -12 Td
+(0pt12pt4pt) Tj
+0 -12 Td
+(-4pt blue!70!black) Tj
+0 -12 Td
+(-4pt) Tj
+0 -12 Td
+(% Customizing itemize lists) Tj
+0 -12 Td
+(label= , leftmargin=1.5em, topsep=0pt, itemsep=2pt) Tj
+0 -12 Td
+(% Remove page numbering) Tj
+0 -12 Td
+(empty) Tj
+0 -12 Td
+(% Define contact information block) Tj
+0 -12 Td
+(Punya Mittal) Tj
+0 -12 Td
+(2pt) Tj
+0 -12 Td
+(AI/ML Engineer \\ Full-Stack Developer \\ Open Source Founder) Tj
+0 -12 Td
+(4pt) Tj
+0 -12 Td
+(\\ +91 8929266960 \\ \\ punya.m215@gmail.com \\ \\ https://github.com/yourusernameGitHub \(148 repos\)) Tj
+0 -12 Td
+(\\ \\ https://linkedin.com/in/yourprofileLinkedIn) Tj
+0 -12 Td
+(6pt) Tj
+0 -12 Td
+(Summary) Tj
+0 -12 Td
+(Highly motivated B.Tech CS \(AI\) student with hands-on experience building end-to-end ML) Tj
+0 -12 Td
+(pipelines, production REST APIs, and real-time distributed systems. Proficient in Python and) Tj
+0 -12 Td
+(applied expertise in advanced frameworks including PyTorch, TensorFlow, XGBoost, and FastAPI.) Tj
+0 -12 Td
+(Proven ability to translate complex natural language goals into deployed AI solutions \(RAG,) Tj
+0 -12 Td
+(LLMs\). Open-source ecosystem founder and competitive problem solver \(90+ LeetCode problems) Tj
+0 -12 Td
+(solved\). Seeking ML/Software Engineering internships.) Tj
+0 -12 Td
+(Technical Skills) Tj
+0 -12 Td
+(- Languages: Python \(Expert\), Java, JavaScript \(ES6+\), SQL, Bash) Tj
+0 -12 Td
+(- ML Frameworks: PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, Pandas, NumPy) Tj
+0 -12 Td
+(- AI/ML Concepts: Retrieval-Augmented Generation \(RAG\), NLP, Prompt Engineering, Feature) Tj
+0 -12 Td
+(Engineering, Hyperparameter Tuning, AutoML, LLMs) Tj
+0 -12 Td
+(- Backend/Web: FastAPI, REST APIs, Node.js, Microservices, WebRTC, API Architecture) Tj
+0 -12 Td
+(- Databases/Tools: Vector Databases \(Pinecone/Chroma\), MongoDB, MySQL, Docker, AWS, Git, CI/CD) Tj
+0 -12 Td
+(- CS Fundamentals: Data Structures, Algorithms, OOP, Distributed Systems, System Design, Event-) Tj
+0 -12 Td
+(Driven Architecture) Tj
+0 -12 Td
+(Experience) Tj
+0 -12 Td
+(AI & Backend Engineering Intern | Analytx4t Lab Pvt Ltd | Oct 2025 ? Dec 2025) Tj
+0 -12 Td
+(- Designed and deployed 10+ production REST APIs using Node.js, optimizing response latency via) Tj
+0 -12 Td
+(connection pooling and advanced query optimization for a financial analytics platform.) Tj
+0 -12 Td
+(- Integrated distributed microservices architecture, enabling low-latency, real-time enterprise) Tj
+0 -12 Td
+(data processing across concurrent multitenant workloads.) Tj
+0 -12 Td
+(AI / ML Engineering Intern | ANNAM.AI \(IIT Ropar\) | May 2025 ? Jul 2025) Tj
+0 -12 Td
+(- Built end-to-end ML pipelines \(preprocessing, feature engineering, training, evaluation\) in) Tj
+0 -12 Td
+(Python, Pandas, and Scikit-learn, resulting in a 50\\% reduction in model iteration time.) Tj
+0 -12 Td
+(- Trained and optimized XGBoost and LightGBM gradient boosting models for agricultural) Tj
+0 -12 Td
+(intelligence systems, achieving 87%+ prediction accuracy on crop yield forecasting datasets.) Tj
+0 -12 Td
+(Selected Projects & Research) Tj
+0 -12 Td
+(KAI ? Cognitive AI Companion Research Paper In Progress) Tj
+0 -12 Td
+(- Developed an AI assistant featuring persistent memory and emotional state simulation by) Tj
+0 -12 Td
+(implementing a novel RAG architecture utilizing vector databases for long-term context) Tj
+0 -12 Td
+(retention across sessions.) Tj
+0 -12 Td
+(AutoML Pipeline Natural Language to Deployed Model) Tj
+0 -12 Td
+(- Engineered an AutoML system that converts natural language goals into deployed models,) Tj
+0 -12 Td
+(cutting model-to-production time by 70\\%. Benchmarked RF, XGBoost, and LightGBM across 5+) Tj
+0 -12 Td
+(datasets using Bayesian hyperparameter tuning.) Tj
+0 -12 Td
+(AI Jailbreak Defense System Patent & Research In Progress) Tj
+0 -12 Td
+(- Architected a real-time security layer detecting prompt injection and jailbreak attacks in) Tj
+0 -12 Td
+(LLMs, significantly enhancing model robustness.) Tj
+0 -12 Td
+(Education & Leadership) Tj
+0 -12 Td
+(University Degree | Graduation Year) Tj
+0 -12 Td
+(- Key Achievements: [List relevant coursework or projects]) Tj
+0 -12 Td
+(Leadership Role) Tj
+0 -12 Td
+(- Description of impact and technical skills utilized.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000004945 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+5015
+%%EOF
