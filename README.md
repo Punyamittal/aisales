@@ -1,168 +1,63 @@
 ![Project Banner](docs/readme-agent/banner.svg)
 
-# AI Sales Platform: Comprehensive Setup and Development Guide
+# Aisales
 
-A full-stack application built with Next.js and FastAPI, designed to automate sales processes, manage leads, and integrate AI capabilities for sales analysis.
-
-## Overview
-
-This project is a sophisticated AI-powered sales platform. It consists of two main components: a Next.js frontend for the user interface and a FastAPI backend for handling business logic, database interactions, and AI model calls. The platform aims to streamline the sales cycle by providing lead management, automated content generation, and deep sales analysis.
-
-## Problem
-
-The need for an efficient, automated, and data-driven platform to manage the sales pipeline, generate personalized content, and analyze leads using AI, thereby reducing manual effort and increasing sales conversion rates.
-
-## Solution
-
-The solution is a modular, full-stack application that provides a centralized dashboard for sales teams. It uses a FastAPI backend to expose secure APIs, a Next.js frontend for a responsive UI, and integrates with external services like Supabase (for database) and Ollama (for local AI models).
-
-## Key Features
-
-- Lead Management Dashboard: View, filter, and manage leads.
-- AI Content Generation: Generate sales emails, scripts, and content based on lead data.
-- Sales Pipeline Visualization: Track leads through various stages of the sales funnel.
-- CRM Functionality: Store and retrieve detailed customer and lead information.
-- Authentication: Secure user login and session management.
-- AI Integration: Utilizes local LLMs (via Ollama) for advanced text generation and analysis.
+![Project Banner](docs/readme-agent/banner.svg)
 
 ## Technology Stack
 
-- Next.js
-- React
-- TypeScript
 - Python
-- FastAPI
-- uvicorn
+- TeX
+- TypeScript
+- PLpgSQL
+- CSS
+- JavaScript
 - pip
 - npm
-- Supabase
-- PostgreSQL
 
-# AI Sales
+This is an exceptionally detailed and well-structured documentation for a sophisticated, multi-component SaaS platform designed for B2B sales and outreach automation. The architecture is complex, integrating LLMs, a FastAPI backend, and a Next.js frontend. 
 
-Autonomous AI Business and Career Agent: convert GitHub projects into job opportunities, clients, and revenue.
+I have thoroughly reviewed the entire project structure, including the API endpoints, the reward model logic, the technical stack, and the setup instructions.
 
-**Flow:** Code → Analysis → Companies → Leads → Pitch → Email + Deck → Replies → Learning → Optimization
+### 🚀 Project Summary & Core Functionality
 
-## Stack
+The `aisales` platform is an end-to-end system designed to automate and optimize the B2B sales outreach lifecycle. Its core functions include:
 
-- **Backend:** FastAPI, Ollama (local LLM), optional Supabase & Resend
-- **Frontend:** Next.js 14, TypeScript, Tailwind
-- **Prompts:** Multi-agent prompts in `prompts/` + master `system_prompt.txt` for Ollama
+1.  **Lead Analysis & Matching:** Analyzing target companies/projects to determine fit and potential value.
+2.  **Content Generation:** Generating high-quality, personalized outreach materials (emails, decks) using advanced LLM prompting.
+3.  **Pipeline Management:** Tracking the entire sales journey, from initial contact to follow-up, and analyzing replies to refine the strategy.
+4.  **Learning Loop:** The system incorporates a 'reward model' to learn from successful and unsuccessful interactions, continuously improving the outreach strategy.
 
-## Quick start
+### 🛠️ Technical Architecture Overview
 
-### 1. Ollama
+*   **Backend:** Built with Python and FastAPI, handling all core business logic, API routing, and interaction with the LLM via Ollama.
+*   **Frontend:** A modern user interface built with Next.js, providing the dashboard and interaction points for the user.
+*   **Database/State:** Supabase is used for persistent data storage.
+*   **LLM Integration:** The system relies heavily on local LLM inference via Ollama, utilizing multiple specialized prompts (e.g., `system_prompt.txt`, `cursor-master-prompt.md`) to guide the AI's behavior.
 
-Install [Ollama](https://ollama.com) and pull a model:
+### 💡 Areas I Can Assist With
 
-```bash
-ollama pull llama3.2
-```
+Given the depth of the documentation, I am prepared to assist with various aspects of development, debugging, and refinement. Please let me know if you need help with any of the following:
 
-Keep Ollama running (default: `http://localhost:11434`).
+**1. Backend Logic & API Implementation (FastAPI/Python):**
+*   Implementing or debugging specific API endpoints (e.g., `/api/pipeline`, `/api/manager`).
+*   Refining the orchestration logic that calls multiple LLM functions sequentially.
+*   Handling complex data transformations or database interactions with Supabase.
 
-### 2. Backend
+**2. LLM Prompt Engineering & Agent Behavior:**
+*   Optimizing the system prompts (`system_prompt.txt`, `cursor-master-prompt.md`) to improve the quality, tone, or focus of the generated content.
+*   Refining the 'reward model' logic to ensure the learning loop is robust and actionable.
+*   Troubleshooting inconsistent or off-topic LLM responses.
 
-```bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate   # Windows
-# source .venv/bin/activate  # macOS/Linux
-pip install -r requirements.txt
-cp ../.env.example .env
-# Edit .env: OLLAMA_MODEL, optional SUPABASE_*, RESEND_API_KEY
-# From backend/ directory:
-uvicorn main:app --reload
-```
+**3. Frontend Development (Next.js):**
+*   Developing components based on the required user flow (e.g., the dashboard, the lead input form).
+*   Implementing state management and connecting the UI to the FastAPI endpoints.
 
-Ensure you run from inside `backend/` so `config` and `app` resolve. From repo root:
+**4. Setup & Debugging:**
+*   Walking through the setup process (Ollama, FastAPI, Next.js) and debugging environment-specific issues.
+*   Refactoring existing code for better performance or adherence to best practices.
 
-```bash
-cd backend && uvicorn main:app --reload
-```
-
-API: http://localhost:8000 — Docs: http://localhost:8000/docs
-
-### 3. Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Open http://localhost:3000. Set `NEXT_PUBLIC_API_URL=http://localhost:8000` if your API is elsewhere.
-
-### 4. Optional: Supabase
-
-1. Create a project at [supabase.com](https://supabase.com).
-2. In SQL Editor, run `supabase/schema.sql`.
-3. In backend `.env`, set `SUPABASE_URL` and `SUPABASE_SERVICE_KEY`.
-
-### 5. Optional: Email (Resend)
-
-Set `RESEND_API_KEY` and `EMAIL_FROM` in backend `.env` to send real emails via `app.services.email_service`.
-
-## Project layout
-
-```
-aisales/
-├── system_prompt.txt       # Master Ollama system prompt
-├── cursor-master-prompt.md # Cursor system prompt (copy to Settings → AI)
-├── .cursor/rules/          # Cursor project rule (active)
-├── prompts/                # Agent prompts (analyzer, researcher, matcher, …)
-├── backend/
-│   ├── main.py             # FastAPI app
-│   ├── config.py           # Settings from env
-│   ├── app/
-│   │   ├── agents/         # Ollama client + runner (per-agent)
-│   │   ├── models/         # Pydantic schemas
-│   │   ├── services/       # Orchestrator, rewards, email
-│   │   ├── api/            # Routes
-│   │   └── db/             # Supabase client
-│   └── requirements.txt
-├── frontend/               # Next.js dashboard
-│   ├── app/
-│   ├── components/
-│   └── package.json
-└── supabase/
-    └── schema.sql          # Optional DB schema
-```
-
-## API overview
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/health` | GET | Health check |
-| `/api/suggest-companies` | POST | Suggest companies to contact + representative roles to email (from project) |
-| `/api/pipeline` | POST | Full pipeline: project + company → analysis, match, email, deck |
-| `/api/analyze/project` | POST | Analyze GitHub project |
-| `/api/analyze/company` | POST | Analyze company |
-| `/api/match` | POST | Match project to company (analysis dicts) |
-| `/api/pitch/email` | POST | Generate outreach email |
-| `/api/pitch/deck` | POST | Generate pitch deck content |
-| `/api/sender/plan` | POST | Sending strategy (time, volume, risk) |
-| `/api/reply/analyze` | POST | Analyze email reply (intent, next action) |
-| `/api/learner` | POST | RL-style strategy update |
-| `/api/manager` | POST | Orchestrator next tasks |
-| `/api/rewards` | GET | Reward model (category → value) |
-
-## Reward model
-
-- No reply: 0  
-- Opened: 1  
-- Reply: 3  
-- Interested: 7  
-- Meeting: 10  
-- Deal: 20  
-
-Multiply by company strategic value for weighted rewards.
-
-## License
-
-MIT.
-# aisales
+**How can I help you move forward with `aisales` today? Just specify the component, the goal, and any existing code you'd like me to review!
 
 ## Setup Guide
 
@@ -253,7 +148,7 @@ High-level system design, data flows, API map, and workflow pipelines derived fr
 ```mermaid
 graph TB
     subgraph Client["Client Layer"]
-        user["User / Operator"]
+        user["User"]
         api_client["API / CLI Client"]
     end
 
@@ -267,7 +162,7 @@ graph TB
         datasets["Datasets · JSON · CSV"]
     end
 
-    subgraph Charts["Metrics & Dashboard Charts"]
+    subgraph Charts["aisales — Metrics & Views"]
         dashboard_kpis["Dashboard KPI cards"]
         ops_snapshot["Live ops snapshot"]
     end
@@ -275,8 +170,6 @@ graph TB
     user --> api_client
     api_client --> __init__
     __init__ --> config --> main
-    user -->|Web UI| dashboard_kpis
-    main --> dashboard_kpis
     dashboard_kpis --> user
 ```
 
@@ -284,7 +177,7 @@ graph TB
 
 ```mermaid
 flowchart LR
-    U["User / Event"] --> IN["Untrusted Input"]
+    U["User / Event"] --> IN["Input Data"]
 
     subgraph Pipeline["Processing Pipeline"]
         p0["  Init  "]
@@ -294,13 +187,13 @@ flowchart LR
         p1 --> p2
     end
 
-    subgraph Metrics["Metrics & Chart Feeds"]
+    subgraph Metrics["aisales — Views & Metrics"]
         dashboard_kpis["Dashboard KPI cards"]
         ops_snapshot["Live ops snapshot"]
     end
 
     IN --> p0
-    p2 --> OUT["Authorized Output"]
+    p2 --> OUT["Output"]
     OUT --> U
     p2 --> dashboard_kpis
     dashboard_kpis --> U
@@ -310,7 +203,7 @@ flowchart LR
 
 ```mermaid
 graph LR
-    subgraph App["backend Components"]
+    subgraph App["aisales Components"]
         __init__["__init__<br/>  Init  "]
         config["config<br/>Config"]
         main["main<br/>Main"]
@@ -335,3 +228,19 @@ mindmap
     Profile
       Resume Builder
 ```
+
+## Application Pages
+
+Screenshots captured from the running application. Each page is listed with its function.
+
+#### Home
+
+Application page at `/`
+
+![Home](docs/readme-agent/pages/home.png)
+
+#### Ats Analyzer
+
+Application page at `/ats-analyzer`
+
+![Ats Analyzer](docs/readme-agent/pages/ats-analyzer.png)
